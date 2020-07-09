@@ -1,3 +1,30 @@
+nav {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 37.6vw);
+  margin: auto;
+  background: inherit;
+  /* border-radius: 5px; */
+  overflow: hidden;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-shadow: 0 2px 14px rgb(0, 0, 0);
+}
+
+nav:before {
+  content: '';
+  background: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.15);
+  filter: blur(10px);
+  margin: -20px;
+  z-index: -1;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -5,7 +32,7 @@
   padding: 0;
   margin: 0;
   height: 20vh;
-  max-height: 100px;
+  max-height: 70px;
   font-size: 1.25em;
 }
 
@@ -16,5 +43,12 @@
 }
 
 .navigationItem a {
-  color: currentColor;
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.navigationItem a:hover {
+  color: #8f8f8f;
+  text-decoration: underline;
+  transition: .2s ease-in;
 }

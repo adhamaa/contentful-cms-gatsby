@@ -12,6 +12,13 @@
   */
   height: 61.8vh;
   max-height: 400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .heroDetails {

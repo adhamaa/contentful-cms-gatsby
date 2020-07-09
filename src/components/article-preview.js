@@ -8,7 +8,7 @@ export default ({ article }) => (
   <div className={styles.preview}>
     <h3 className={styles.previewTitle}>
       <Link to={`/blog/${article.slug}`}>
-        <Img alt="" fluid={article.heroImage.fluid} />
+        <Img className={styles.Img} alt="" fluid={article.heroImage.fluid} />
         {article.title}
       </Link>
     </h3>
