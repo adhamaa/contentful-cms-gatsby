@@ -6,21 +6,25 @@ import styles from "./article-preview.module.css";
 
 export default ({ article }) => (
   <div className={styles.preview}>
-    <Img alt="" fluid={article.heroImage.fluid} />
     <h3 className={styles.previewTitle}>
-      <Link to={`/blog/${article.slug}`}>{article.title}</Link>
+      <Link to={`/blog/${article.slug}`}>
+        <Img alt="" fluid={article.heroImage.fluid} />
+        {article.title}
+      </Link>
     </h3>
+    <div>
+      {article.tags &&
+        article.tags.map((tag) => (
+          <p className={styles.tag} key={tag}>
+            {tag}
+          </p>
+        ))}{" "}
+    </div>
     <small>{article.publishDate}</small>
     <div
       dangerouslySetInnerHTML={{
         __html: article.description.childMarkdownRemark.html,
       }}
     />
-    {article.tags &&
-      article.tags.map((tag) => (
-        <p className={styles.tag} key={tag}>
-          {tag}
-        </p>
-      ))}
   </div>
 );

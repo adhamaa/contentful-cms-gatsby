@@ -11,4 +11,7 @@
   border-radius: 2px;
   border: 1px solid #A0A0A0;
   margin-right: .5em;
+  font-size: .8em;
 }
+
+.tag:hover {}
