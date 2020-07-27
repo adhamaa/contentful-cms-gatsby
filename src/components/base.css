@@ -13,6 +13,7 @@ body {
   color: #373F49;
   background: #eee;
   margin: 0;
+  position: relative;
 }
 
 img {

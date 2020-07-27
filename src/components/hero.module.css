@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  top: -70px;
   background: #000;
   color: #fff;
   text-align: center;

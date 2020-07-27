@@ -1,8 +1,7 @@
 nav {
-  position: absolute;
-  top: 0;
-  width: calc(100% - 37.6vw);
-  margin: auto;
+  position: relative;
+  top: 20px;
+  margin-left: auto;
   background: inherit;
   /* border-radius: 5px; */
   overflow: hidden;
