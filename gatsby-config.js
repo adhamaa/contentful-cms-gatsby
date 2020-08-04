@@ -5,6 +5,7 @@ require("dotenv").config({
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  // host: 'preview.contentful.com'
 };
 
 // if you want to use the preview API please define
